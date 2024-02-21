@@ -5,7 +5,7 @@ kubectl get nodes
 kubectl get pods 
 
 To get list of pods from specif namespace 
-kubectl get pods -n <Namespace name>
+kubectl get pods -n <Namespace_name>
 
 
 To create a namespace 
@@ -15,6 +15,9 @@ kubectl apply -f namespace.yaml
 
 To delete a namespace 
 kubectl delete -f <.yaml file name>
+
+To login to a specif container inside a pod
+kubectl exec -it <pod_name> -c <container_name> -- <command_name>
 
 
 
