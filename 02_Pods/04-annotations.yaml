@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: annotations_pod
+  name: annotations-pod
   labels: #Used to attach resources(pod) to kubernetes.
     course: DevOps
     Trainer: "SivakumarReddy"
@@ -11,7 +11,7 @@ metadata:
 spec:
   # list of containers
   containers:
-  - name: annotations_container
+  - name: annotations-container
     image: nginx
     ports:
     - containerPort: 80
