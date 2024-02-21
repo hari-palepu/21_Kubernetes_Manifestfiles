@@ -6,7 +6,7 @@ metadata:
 spec:
   # list of containers
   containers:
-  - name: container01  #Nmae of the container
+  - name: container01   #Nmae of the container
     image: nginx        #Name of the image, puling it from dockerhub as it is a public iamge.
     ports:
-    - containerPort: 80
+    - containerPort: 80 #Just for information 
