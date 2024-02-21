@@ -1,6 +1,11 @@
 
 To get list of name spaces 
 kubectl get ns (or) kubectl get namespace
+kubectl get nodes
+kubectl get pods 
+
+To get list of pods from specif namespace 
+kubectl get pods -n <Namespace name>
 
 
 To create a namespace 
@@ -12,5 +17,6 @@ To delete a namespace
 kubectl delete -f <.yaml file name>
 
 
-kubectl get nodes
+
+
 
