@@ -20,6 +20,9 @@ kubectl get configmaps
 To get full info about congifmap
 kubectl describe configmap <configmap_name>
 
+To get list of secrets
+kubectl get secrets
+
 
 
 
@@ -43,8 +46,11 @@ kubectl get services
 kubectl get svc
 
 
-TO get list of replica sets
+To get list of replica sets
 kubectl get rs
+
+To get list of deployment sets
+kubectl get deployment
 
 
 

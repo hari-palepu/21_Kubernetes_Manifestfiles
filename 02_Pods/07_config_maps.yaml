@@ -8,3 +8,9 @@ data: #We are storing the values in this file and we can pass it to pod.
 
 
 ## TO store values, usernames, passwords, configration etc and to fetch it dynamically.
+
+# To get list of config maps
+# kubectl get configmaps
+
+# To get full info about congifmap
+# kubectl describe configmap <configmap_name>

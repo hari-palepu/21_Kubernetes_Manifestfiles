@@ -26,3 +26,7 @@ spec:
 # Replica set is used to repliate the pods
 # Pod is a subset of replica set
 # Replica set can't update the version so we use deployment sets
+
+
+# To get list of replica sets
+# kubectl get rs

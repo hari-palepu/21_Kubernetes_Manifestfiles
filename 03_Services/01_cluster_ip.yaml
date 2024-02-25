@@ -27,3 +27,9 @@ spec:
     targetPort: 80 #container-port
 
 ## if anybody hits the service port then it is farwards to container.
+
+
+# To get the list of services 
+# kubectl get services
+# (or)
+# kubectl get svc
