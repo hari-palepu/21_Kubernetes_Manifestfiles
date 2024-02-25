@@ -43,6 +43,9 @@ kubectl get services
 kubectl get svc
 
 
+TO get list of replica sets
+kubectl get rs
+
 
 
 
