@@ -11,6 +11,14 @@ To get full info about pod
 kubectl describe pod <pod_name>
 
 
+To get list of config maps
+kubectl get configmaps
+
+To get full info about congifmap
+kubectl describe configmap <configmap_name>
+
+
+
 
 To create a namespace 
 kubectl create -f <.yaml file name>
@@ -22,6 +30,8 @@ kubectl delete -f <.yaml file name>
 
 To login to a specif container inside a pod
 kubectl exec -it <pod_name> -c <container_name> -- <command_name>
+
+
 
 
 
