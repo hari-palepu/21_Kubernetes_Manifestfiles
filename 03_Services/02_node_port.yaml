@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v1  ## To create pod
 kind: Pod
 metadata:
   name: nginx-nodeport
@@ -14,7 +14,7 @@ spec:
     ports:
     - containerPort: 80
 ---
-apiVersion: v1
+apiVersion: v1   ## To create Nodeport
 kind: Service
 metadata:
   name: nginx-nodeport
@@ -27,3 +27,6 @@ spec:
   - protocol: TCP
     port: 80 #service-port
     targetPort: 80 #container-port
+
+
+## Once we create Nodeport it will create Cluster Ip also. Cluster Ip is a subset or part of Nodeport.
