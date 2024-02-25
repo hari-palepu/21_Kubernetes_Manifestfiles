@@ -13,3 +13,5 @@ spec:
       value: "Hello from the environment"
     - name: DEMO_FAREWELL
       value: "Such a sweet sorrow"
+
+## Env is hardcoded here to avoid that we can store the values in configmap. Map is nothing but stores key value pairs andwe stores files aslo.

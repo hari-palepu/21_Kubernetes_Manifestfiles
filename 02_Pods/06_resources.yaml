@@ -7,7 +7,7 @@ spec:
   containers:
   - name: container01  #Name of the container
     image: nginx
-    #here with this line port will not be opened, just for information
+    #The below port will not be open, just for information
     ports:
     - containerPort: 80
     resources:
@@ -17,3 +17,6 @@ spec:
       limits:     #Man cpu and ram this comainter can block to use
         cpu: "200m"
         memory: "128Mi"
+
+
+## Limits shouldbe equal or greater than requests.

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config01
+data: #We are storing the values in this file and we can pass it to pod. 
+  course: DevOps
+  trainer: "SivakumarReddy"
+
+
+## TO store values, usernames, passwords, configration etc and to fetch it dynamically.
