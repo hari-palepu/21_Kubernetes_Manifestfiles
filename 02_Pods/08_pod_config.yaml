@@ -23,7 +23,7 @@ spec:
           key: trainer #Key name from 7th line
 
 ## create a config map first kubectl apply -f 07_config_maps.yaml then then apply 08_pod_config.yaml
-## Instead of wrting the name, key etc we can directly refer the configmap file.
+## Instead of harcoding the key values here we can directly refer the configmap file.
 
 
 

@@ -10,6 +10,9 @@ kubectl get pods -n <Namespace_name>
 To get full info about pod
 kubectl describe pod <pod_name>
 
+To delete a namespace 
+kubectl delete -f <.yaml file name>
+
 
 To get list of config maps
 kubectl get configmaps
@@ -29,7 +32,8 @@ To delete a namespace
 kubectl delete -f <.yaml file name>
 
 To login to a specif container inside a pod
-kubectl exec -it <pod_name> -c <container_name> -- <command_name>
+kubectl exec -it <pod_name> -c <container_name> -- <command_name> 
+commnad == bash or sh etc
 
 
 
