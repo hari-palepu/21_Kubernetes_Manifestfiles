@@ -37,6 +37,13 @@ commnad == bash or sh etc
 
 
 
+To get the list of services 
+kubectl get services
+(or)
+kubectl get svc
+
+
+
 
 
 
