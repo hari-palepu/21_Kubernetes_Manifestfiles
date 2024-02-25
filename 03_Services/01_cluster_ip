@@ -12,8 +12,7 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-
-
+---
 apiVersion: v1 ## To create service bydefault is cluster ip
 kind: Service
 metadata:
