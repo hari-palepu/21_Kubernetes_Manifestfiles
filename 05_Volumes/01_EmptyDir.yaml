@@ -67,3 +67,5 @@ spec:
             items:
               - key: filebeat.yml
                 path: filebeat.yml
+
+## EmptyDir is used in sidecar patterns to access the main coantainer logs and ships to elastic search or external system.
