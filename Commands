@@ -10,6 +10,9 @@ kubectl get pods -n <Namespace_name>
 To get full info about pod
 kubectl describe pod <pod_name>
 
+kubectl get pod -o wide
+
+
 To delete a namespace 
 kubectl delete -f <.yaml file name>
 
@@ -44,13 +47,22 @@ To get the list of services
 kubectl get services
 (or)
 kubectl get svc
+kubectl get services -n <Namespace_name>
 
 
 To get list of replica sets
 kubectl get rs
+kubectl get rs -n <Namespace_name>
 
 To get list of deployment sets
 kubectl get deployment
+kubectl get deployment -n <Namespace_name>
+
+
+To set custom namespace as default namespace then no need to give -n
+sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+kubens <Namespace_name>
 
 
 
