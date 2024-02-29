@@ -6,5 +6,5 @@ provisioner: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer
 
 
-
+## Storage class id only for dynamic
 ##kubectl apply -f 04_EBS-StorageClass.yaml
