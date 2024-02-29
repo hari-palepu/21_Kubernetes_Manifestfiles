@@ -4,8 +4,8 @@ metadata:
   name: efs-dynamic
 spec:
   accessModes:
-    - ReadWriteMany
-  storageClassName: efs-sc-roboshop
+    - ReadWriteMany #As efs can be attached to multiple servers
+  storageClassName: efs-sc-roboshop #From 06_EFS-Storageclass.yaml
   resources:
     requests:
       storage: 5Gi
@@ -13,7 +13,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: efs-dynamic
+  name: efs-dynamic-pod
   labels:
     demo: efs-dynamic
 spec:
@@ -50,3 +50,6 @@ spec:
 ## After installing the drivers we can see private-ecr-driver.yaml
 ## kubectl apply -f private-ecr-driver.yaml
 ## Create pv and pvc
+
+# kubectl apply -f 06_EFS-StorageClass.yaml
+# kubectl get sc
