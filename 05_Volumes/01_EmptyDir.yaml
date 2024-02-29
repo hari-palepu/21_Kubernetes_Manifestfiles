@@ -69,3 +69,8 @@ spec:
                 path: filebeat.yml
 
 ## EmptyDir is used in sidecar patterns to access the main coantainer logs and ships to elastic search or external system.
+
+
+## kubectl apply -f 01_EmptyDir.yaml
+## kubectl exec -it <pod_name> -c filebeat-sidecar -- bash
+## kubectl logs <pod_name> -c filebeat-sidecar

@@ -66,3 +66,8 @@ spec:
           path: /var/log
     
 ## Hostpath is used to collect the host/worker node logs from a pod and ship it to the elastic search.
+
+## kubectl apply -f 02_Hostpath.yaml
+## kubectl get pods -n kube-system
+## kubectl exec -it <pod_name> -n kube-system -- bash
+## cd /var/log ## Now this is having access to host logs 
