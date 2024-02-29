@@ -42,7 +42,7 @@ spec:
     - name: nginx-data
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    zone: 1f
+    zone: 1a
   volumes:
   - name: nginx-data
     persistentVolumeClaim:
@@ -77,3 +77,6 @@ spec:
 ## kubectl get nodes --show-labels
 ## Based on the worker nodes AZ assign lables 
 ## kubectl label nodes <node_name> zone=1a
+## kubectl apply -f 05_EFS-static.yaml
+## kubectl exec -it efs-static-pod -- bash
+## 
