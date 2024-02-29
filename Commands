@@ -65,6 +65,13 @@ sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 kubens <Namespace_name>
 
 
+To get storage class 
+kubectl get sc
+
+
+kubectl api-resources
+
+
 
 
 

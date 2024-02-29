@@ -71,3 +71,9 @@ spec:
 ## kubectl get nodes --show-labels
 ## Based on the worker nodes AZ assign lables 
 ## kubectl label nodes <node_name> zone=1a
+## kubectl apply -f 03_EBS-Static_provisioning.yaml
+## kubectl exec -it ebs-static-pod -- bash
+## echo "<h1>Hello this is from EBS Static</h1>" >> /usr/share/nginx/html/ebs.html
+## Now copy the LB_dns/ebs.html and searchn in google
+
+## Even if the pod is deleted and new pod created still access the same storage.
