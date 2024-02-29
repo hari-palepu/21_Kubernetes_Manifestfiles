@@ -51,5 +51,7 @@ spec:
 ## kubectl apply -f private-ecr-driver.yaml
 ## Create pv and pvc
 
-# kubectl apply -f 06_EFS-StorageClass.yaml
-# kubectl get sc
+## kubectl apply -f 06_EFS-StorageClass.yaml
+## kubectl get sc
+## kubectl apply -f 06_EFS-Dynamic.yaml
+##Now it will create an access point in EFS
