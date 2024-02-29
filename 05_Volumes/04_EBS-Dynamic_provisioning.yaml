@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: ebs-sc  #PV is requesting the data from 04_EBS-StorageClass
+  storageClassName: ebs-sc  #PVC is requesting the data from 04_EBS-StorageClass
   resources:
     requests:
       storage: 4Gi
@@ -28,7 +28,7 @@ spec:
   volumes:
   - name: nginx-data
     persistentVolumeClaim:
-      claimName: ebs-dynamic ##Pod is claiming the data from PV
+      claimName: ebs-dynamic ##Pod is claiming the data from PVC
 ---
 apiVersion: v1
 kind: Service
@@ -42,3 +42,7 @@ spec:
   - protocol: TCP
     port: 80 #service-port
     targetPort: 80 #container-port
+
+## create storage class first
+## kubectl apply -f 04_EBS-StorageClass.yaml
+## kubectl apply -f 04_EBS-Dynamic_provisioning.yaml

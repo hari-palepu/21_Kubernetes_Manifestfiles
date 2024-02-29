@@ -4,3 +4,7 @@ metadata:
   name: ebs-sc ## we have to pass this name to PV.
 provisioner: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer
+
+
+
+##kubectl apply -f 04_EBS-StorageClass.yaml
