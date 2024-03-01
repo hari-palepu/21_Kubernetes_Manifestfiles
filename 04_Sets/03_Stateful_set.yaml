@@ -49,8 +49,14 @@ spec:
     app: nginx
 
 
+##Service sets are used for statefull applications
   
 ## Install aws-ebs-csi drivers in worker station
 ## Attach ebs csi driver policy to worker node
 ## Install storage class
+
+## kubectl apply -f 03_Stateful_set.yaml
+## kubectl delete -f 03_Stateful_set.yaml
+## kubectl delete pvc www-web-0
+
 
