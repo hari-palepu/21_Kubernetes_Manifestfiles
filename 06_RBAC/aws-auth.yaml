@@ -19,7 +19,8 @@ kind: ConfigMap
 metadata:
   name: aws-auth
   namespace: kube-system
-  uid: c545fed5-5d66-41bb-be7b-13e318a33fd2
+  uid: 44e6e177-8295-4e8d-a25d-edb46b7b1e5d
+
 
 
 ##Replace with your username and userarn in the above script.
@@ -35,3 +36,5 @@ metadata:
 # kubectl get configmap aws-auth -n kube-system -o yaml
 
 # We have to add the user name and userarn 
+
+

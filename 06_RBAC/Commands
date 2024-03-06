@@ -1,0 +1,5 @@
+## Command to run
+
+## git clone https://github.com/hari-palepu/21_Kubernetes_Manifestfiles.git
+## kubectl apply -f ramesh.yaml
+## kubectl apply -f aws-auth.yaml
