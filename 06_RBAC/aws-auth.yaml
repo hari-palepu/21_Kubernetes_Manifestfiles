@@ -4,12 +4,12 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::315069654700:role/eksctl-roboshop-cluster-nodegroup--NodeInstanceRole-yZS3T6m0Z2Am
+      rolearn: arn:aws:iam::004316194461:role/eksctl-roboshop-nodegroup-spot-NodeInstanceRole-JblbTEAJmMKP
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
       - roboshop-pod-reader
-      userarn: arn:aws:iam::004316194461:user/ramesh 
+      userarn: arn:aws:iam::004316194461:user/ramesh
       username: ramesh
     - groups:
       - roboshop-admin
@@ -19,7 +19,7 @@ kind: ConfigMap
 metadata:
   name: aws-auth
   namespace: kube-system
-  uid: 44e6e177-8295-4e8d-a25d-edb46b7b1e5d
+  uid: b0f7f7f5-ca8e-41cd-91c9-2617746ae144
 
 
 
@@ -32,7 +32,7 @@ metadata:
 # 2.To Set Authorization:
 # To integrate the IAM user with EKS we have to edit the aws-auth file
 
-# Command to ge the aws auth configration file:
+# Command to get the aws auth configration file:
 # kubectl get configmap aws-auth -n kube-system -o yaml
 
 # We have to add the user name and userarn 
