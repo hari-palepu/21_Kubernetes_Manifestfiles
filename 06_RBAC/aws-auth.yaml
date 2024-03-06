@@ -13,7 +13,7 @@ data:
       username: ramesh
     - groups:
       - roboshop-admin
-      userarn: arn:aws:iam::315069654700:user/raheem
+      userarn: arn:aws:iam::004316194461:user/raheem
       username: raheem
 kind: ConfigMap
 metadata:
@@ -26,7 +26,7 @@ metadata:
 ##Replace with your username and userarn in the above script.
 
 # 1.To set Authentication:
-# Create IAM user and add EKS policies what ever you want(WE have given cluster describe  here)
+# Create IAM user and add EKS policies what ever you want.
 # Create role and role bindings
 
 # 2.To Set Authorization:
