@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app2
-        image: joindevops/app2:v1
+        image: haripalepu/app2:v1
         imagePullPolicy: Always
         resources:
           requests:
@@ -42,15 +42,15 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app2
-  annotations:
+  annotations: ##Used to connect external services
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test,Project=Roboshop
-    alb.ingress.kubernetes.io/group.name: joindevops
+    alb.ingress.kubernetes.io/group.name: loadbalancergroup
 spec:
   ingressClassName: alb
   rules:
-  - host: "app2.daws76s.online"
+  - host: "app2.haripalepu.cloud"
     http:
       paths:
       - pathType: Prefix

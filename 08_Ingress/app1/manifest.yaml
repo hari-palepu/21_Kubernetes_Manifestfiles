@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app1
-        image: joindevops/app1:v1
+        image: hariaplepu/app1:v1
         imagePullPolicy: Always
         resources:
           requests:
@@ -46,11 +46,11 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test,Project=Roboshop
-    alb.ingress.kubernetes.io/group.name: joindevops
+    alb.ingress.kubernetes.io/group.name: loadbalancergroup
 spec:
   ingressClassName: alb
   rules:
-  - host: "app1.daws76s.online"
+  - host: "app1.haripalepu.cloud"
     http:
       paths:
       - pathType: Prefix
