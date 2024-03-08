@@ -1,6 +1,6 @@
 
 Authentication - EKS will use IAM to authenticate.
-Authorization - From EKS side
+Authorization  - From EKS side
 
 
 1.To set Authentication:

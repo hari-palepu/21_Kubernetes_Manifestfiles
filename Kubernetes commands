@@ -74,7 +74,19 @@ kubectl api-resources
 
 ## To get list of HPA
 kubectl get hpa
-kubectl get hpa
+
+
+
+## To upgrade
+aws eks update-kubeconfig --region <Region_code> --name <Cluster_name>
+
+## Taint command
+kubectl taint nodes <NameOfTheNode> <Key>=<Value>:<Effect>
+Effect = NoExecute,NoSchedule,PreferNoSchedule
+
+## Untaint command
+kubectl taint nodes <NameOfTheNode> <Key>=<Value>:<Effect>-
+
 
 
 
